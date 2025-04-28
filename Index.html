@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dg Energia - Sua energia em boas mãos</title>
+  <style>
+    /* Estilo geral */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #001f3f, #003366);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeIn 2s ease-in;
+    }
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 20px;
+    }
+    nav {
+      background-color: #003366;
+      display: flex;
+      justify-content: center;
+      padding: 15px 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      animation: slideDown 1s ease-in-out;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeInUp 1.5s ease;
+    }
+    .servicos {
+      background: #eef2f3;
+    }
+    .contato {
+      background: #f0f8ff;
+    }
+    footer {
+      background: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .botao-contato {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #ffcc00;
+      color: #003366;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .botao-contato:hover {
+      background: #ffd633;
+    }
+    /* Animações */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 32px;
+      }
+      nav a {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header id="inicio">
+  <h1>Dg Energia</h1>
+  <p>Sua energia em boas mãos</p>
+</header>
+
+<nav>
+  <a href="#inicio">Início</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#sobre">Sobre</a>
+  <a href="#contato">Contato</a>
+</nav>
+
+<section id="inicio">
+  <h2>Bem-vindo à Dg Energia</h2>
+  <p>Especialistas em elétrica residencial, comercial e automação. 
+  Serviços de alto padrão para quem valoriza segurança e qualidade.</p>
+</section>
+
+<section id="servicos" class="servicos">
+  <h2>Nossos Serviços</h2>
+  <ul style="list-style: none; padding: 0; margin-top: 20px;">
+    <li>Infraestrutura elétrica de alto padrão</li>
+    <li>Instalação de quadros de distribuição</li>
+    <li>Iluminação decorativa e funcional</li>
+    <li>Automação residencial e comercial</li>
+    <li>Manutenção preventiva e corretiva</li>
+  </ul>
+</section>
+
+<section id="sobre">
+  <h2>Sobre a Dg Energia</h2>
+  <p>Somos especialistas com anos de experiência no mercado elétrico.
+  Nossa missão é entregar projetos seguros, modernos e com acabamento de excelência.</p>
+</section>
+
+<section id="contato" class="contato">
+  <h2>Entre em Contato</h2>
+  <p>Email: contato@dgenergia.com</p>
+  <p>Telefone: (21) 99999-9999</p>
+  <p>WhatsApp: (21) 99999-9999</p>
+  <a href="https://wa.me/5521999999999" target="_blank" class="botao-contato">Fale Conosco no WhatsApp</a>
+</section>
+
+<footer>
+  <p>&copy; 2025 Dg Energia. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
